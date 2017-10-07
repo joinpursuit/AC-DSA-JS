@@ -1,77 +1,69 @@
-### Big O Homework
+### Big O Practice
 
 ## Instructions
 
-Work on these problems in your fork of the AC-DSA repo.  Add the runtimes below, then push your commits up.  If you have not yet made a pull request, make a pull request against AC-DSA.
+Work on these problems in your fork of the AC-DSA repo.
+Add the runtimes below, then push your commits up.  If
+you have not yet made a pull request, make a pull
+request against AC-DSA.
 
-```swift
-func problemOne(arr: [Int]) {
-    for i in 0..<1000 {
+```javascript
+func problemOne() {
+    for (var i=0; i<1000; i++) {
         print(i)
     }
 }
 ```
 
-problemOne(arr:) runtime: 
 
-
-```swift
-func problemTwo(arr: [Int]) {
-    for i in 0..<arr.count {
-        for j in 0..<arr.count {
-            print("\(i), \(j)")
+```javascript
+func problemTwo(arr) {
+    for (var i=0; i<arr.length; i++) {
+        for (var j=0; j<arr.length; j++) {
+            print(i + ' ' + )
         }
     }
 }
 ```
 
-problemTwo(arr:) runtime: 
 
-
-```swift
-func problemThree(arr: [Int]) {
-    for _ in 0..<1000 {
-        problemOne(arr: arr)
+```javascript
+func problemThree() {
+    for (var i=0; i<1000; i++) {
+        problemOne()
     }
 }
 ```
 
-problemThree(arr:) runtime: 
 
-
-```swift
-func problemFour(arr: [Int]) {
-    for _ in 0..<arr.count {
-        problemTwo(arr: arr)
+```javascript
+func problemFour(arr) {
+    for (var i=0; i<arr.length; i++) {
+        problemTwo(arr)
     }
 }
 ```
 
-problemFour(arr:) runtime: 
 
-
-```swift
-func problemFive(arr: [Int]) {
-    for _ in 0..<arr.count {
-        problemTwo(arr: arr)
+```javascript
+func problemFive(arr) {
+    for (var i=0; i<arr.length; i++) {
+        problemTwo(arr)
     }
-    for _ in 0..<arr.count {
-        problemTwo(arr: arr)
+    for (var i=0; i<arr.length; i++) {
+        problemTwo(arr)
     }
 }
 ```
 
-problemFive(arr:) runtime: 
 
-
-```swift
-func problemSix(arr: [Int]) {
-    for _ in 0..<arr.count {
-        for _ in 0..<arr.count {
-            problemTwo(arr: arr)
+```javascript
+func problemSix(arr) {
+    for (var i=0; i<arr.length; i++) {
+        for (var j=0; j<arr.length; j++) {
+            problemTwo(arr)
         }
     }
 }
 ```
 
-problemSix(arr:) runtime: 

@@ -8,7 +8,7 @@ you have not yet made a pull request, make a pull
 request against AC-DSA.
 
 ```javascript
-func problemOne() {
+func problemOne(arr) {
     for (var i=0; i<1000; i++) {
         print(i)
     }

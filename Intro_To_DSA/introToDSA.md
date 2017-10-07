@@ -21,16 +21,6 @@ We already have some exposure to using data structures in Swift.  What some exam
 	Array
 </details>	
 
-<details>
-	<summary>Example Three</summary>
-	Set
-</details>
-
-<details>
-	<summary>Example Four</summary>
-	Enums, Structs, and Classes
-</details>	
-
 
 Over the course of our class, we will discuss several other data structures including:
 
@@ -48,7 +38,7 @@ If we want to use and access data, we need a way to store it.  Data structures h
 - How would you implement the back button in a web browser?
 - How would you store the taxonomy of several different species?
 
-An understanding of data structures will enable you to write readable, efficient and exentendible code.
+An understanding of data structures will enable you to write readable, efficient and extensible code.
 
 Additionally, our programs can be faster or slower depending on how we store and access information.  There is a huge difference between something taking .1 seconds and 1 second!  Knowing which data structures to use can make a huge difference for end users of your app.
 
@@ -218,10 +208,10 @@ Your solution might look totally diffferent.  There are an infinite amount of wa
 ## Technical Interviews:
 Answering technical questions is a necessary part of a technical interview.  Technical questions come in several different forms.
 
-1. iOS/App development Specific topics
-  - Explain the life cycle of UIViewController
-  - What is MVC design?
-  - What is the class hierarchy for a UIButton?
+1. FSW development Specific topics
+  - Describe a serverless architecture.
+  - Explain why you might want your database on a different server?
+  - Do you prefer JavaScript factory functions or constructors?
 
 2. Pair programming
  - Live code an app with your interviewer
@@ -283,14 +273,14 @@ Example:
 <details>
 	<summary> 5. Code the solution </summary>
 	
-	func sumAllEven(arr: [Int]) -> Int {
-		var sum = 0
-		for num in arr {
-			if num % 2 == 0 {
-				sum += num
+	func sumAllEven(arr) {
+		var sum = 0;
+		for (var i=0; i<arr.length; i++) {
+			if (arr[i] % 2 == 0 {
+				sum += arr[i];
 			}
 		}
-		return sum
+		return sum;
 	}
 </details>	
 
@@ -302,8 +292,6 @@ Example:
 	
 </details>
 
-
-**You try**: Rewrite the function using higher ordered functions
 
 
 ### **Practice Problem One**
@@ -334,8 +322,3 @@ Example:
 *Sample input*: [9, 0, 6]  [15, 14, 9]
 
 *Sample output*: [135, 0, 54]
-
-### For Later
-
-## Homework
-Your homework will be several more algorithm solving questions.  This homework is due before class **tomorrow** Oct. 18th.  These homework assignments will be checked for completion.  You will use the testing suite in XCode to get immediate feedback if your algorithms are successful.

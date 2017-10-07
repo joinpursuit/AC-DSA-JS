@@ -20,7 +20,7 @@ func problemOne() {
 func problemTwo(arr) {
     for (var i=0; i<arr.length; i++) {
         for (var j=0; j<arr.length; j++) {
-            print(i + ' ' + )
+            print(i + ' ' + j)
         }
     }
 }

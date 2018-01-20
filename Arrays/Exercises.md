@@ -40,3 +40,25 @@ isRotation('abcde', 'abced');
 isRotation('abc', 'a');
 // returns false
 ```
+
+### Four
+Given a square matrix of size 3x3, calculate the absolute value of the
+difference between the sum of its diagonals.
+
+```js
+function absSumDiff3(twoDArray) { return; }
+
+absSumDiff3([[1,2,3], [4,5,6], [7,8,9]]);
+// returns 4
+```
+
+### Five
+Given a square matrix of size NxN, calculate the absolute value of the
+difference between the sum of its diagonals.
+
+```js
+function absSumDiffN(twoDArray) { return; }
+
+absSumDiffN([[4,1,2,5], [3,1,9,2], [4,1,3,8], [9,2,4,3]]);
+// returns 13
+```

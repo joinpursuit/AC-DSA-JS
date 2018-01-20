@@ -172,7 +172,7 @@ without storing passwords.
 
 2. Given a block of text find the 5 most common words.
 
-3. Write the song Old Mac Donald using a hash table and two stacks. The order
+3. Write the song Old Mac Donald using an array of objects. The order
 in which each animal is introduced doesn't matter.
 	```
 	Old Mac Donald had a farm 

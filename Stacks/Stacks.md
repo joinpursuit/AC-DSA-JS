@@ -10,7 +10,7 @@ A more traditional representation looks like:
 
 ![CS Stack](http://stanford.edu/class/archive/cs/cs106b/cs106b.1158/images/stack-figure.png)
 
-## L ast In First Out
+## Last In First Out
 
 Because we can only interact with the top of the stack, the last thing we put into the stack is the first thing that will come out.  This is called Last In First Out or LIFO.
 

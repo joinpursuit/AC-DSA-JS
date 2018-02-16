@@ -50,7 +50,7 @@ A stack has the following methods:
 	O(1)
 </details>
 
-##Use cases
+## Use cases
 
 1. Back button in a browser
 2. Undo feature in a text editor
@@ -59,7 +59,7 @@ A stack has the following methods:
 ![Maze](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/pix/maze.bmp)
 
 
-##Implementations
+## Implementations
 
 We can implement a stack two different ways.
 

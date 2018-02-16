@@ -10,7 +10,7 @@ A more traditional representation looks like:
 
 ![CS Stack](http://stanford.edu/class/archive/cs/cs106b/cs106b.1158/images/stack-figure.png)
 
-## L ast In First Out
+## Last In First Out
 
 Because we can only interact with the top of the stack, the last thing we put into the stack is the first thing that will come out.  This is called Last In First Out or LIFO.
 
@@ -50,7 +50,7 @@ A stack has the following methods:
 	O(1)
 </details>
 
-##Use cases
+## Use cases
 
 1. Back button in a browser
 2. Undo feature in a text editor
@@ -59,7 +59,7 @@ A stack has the following methods:
 ![Maze](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/pix/maze.bmp)
 
 
-##Implementations
+## Implementations
 
 We can implement a stack two different ways.
 

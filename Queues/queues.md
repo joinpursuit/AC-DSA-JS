@@ -8,7 +8,7 @@ Queues, customarily, have the following methods:
 
 * peek - Finds the first in line.
 * enqueue - Adds an item to the end of the line.
-* dequeue - Adds an item to the beginning of the line.
+* dequeue - Remove an item from the beginning of the line.
 * size - Determines the current number of elements in a queue.
 * isEmpty - Determines if the queue is empty.
 

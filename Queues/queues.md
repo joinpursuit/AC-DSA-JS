@@ -12,7 +12,7 @@ Queues, customarily, have the following methods:
 * size - Determines the current number of elements in a queue.
 * isEmpty - Determines if the queue is empty.
 
-There are lots of uses for stacks and queues, as all of their operations have an O(n) time complexity. For queues, think of the following applications:
+There are lots of uses for stacks and queues, as all of their operations have an O(1) time complexity. For queues, think of the following applications:
 
 * Limiting participants in an online video game to manage server load.
 * Limiting active calls on a customer service line.

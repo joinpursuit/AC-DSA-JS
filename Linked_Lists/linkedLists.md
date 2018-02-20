@@ -21,8 +21,7 @@ Let's break that down. You have a 3-node list, and you remove item 2. Item 2 is 
 
 
 
-1 = ↓ = 3
-    2
+1 = ↓2↓ = 3
 
 
 1=3

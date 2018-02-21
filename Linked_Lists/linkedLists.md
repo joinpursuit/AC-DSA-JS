@@ -45,6 +45,12 @@ Give it a try yourself! If you need help, or if you'd like to refer to an exampl
 
 * [Practical Implementation](https://code.tutsplus.com/articles/data-structures-with-javascript-singly-linked-list-and-doubly-linked-list--cms-23392)
 
+## Runtime Complexity
+
+* Accessing an element in a linked list: O(n)
+* Removing an element from a linked list: O(n) to find + O(1) to remove
+* Removing an element from an array (if we don't know the index): O(n) to find + O(n) to remove
+
 ## More Exercises (CodeWars)
 
 * [Linked Lists - Push & BuildOneTwoThree](http://www.codewars.com/kata/linked-lists-push-and-buildonetwothree)

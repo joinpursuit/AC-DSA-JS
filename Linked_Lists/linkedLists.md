@@ -44,6 +44,7 @@ Got all that? Okay, now:
 Give it a try yourself! If you need help, or if you'd like to refer to an example after you've finished, take a look at this:
 
 * [Practical Implementation](https://code.tutsplus.com/articles/data-structures-with-javascript-singly-linked-list-and-doubly-linked-list--cms-23392)
+* [Implementation with ES6](https://repl.it/@lizraeli/Linked-Lists)
 
 ## Runtime Complexity
 

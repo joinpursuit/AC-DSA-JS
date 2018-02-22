@@ -164,7 +164,7 @@ Consider the following visualization of insertion sort:
 
 [insertion sort visualization](https://www.youtube.com/watch?v=8oJS1BMKE64)
 
-![vis ins](https://en.wikipedia.org/wiki/Insertion_sort#/media/File:Insertion-sort-example-300px.gif)
+![vis ins](https://cdn-images-1.medium.com/max/800/1*krA0OFxEDgi8hVHJffCi4w.gif)
 
 The following is an implementation of insertion sort in javascript:
 

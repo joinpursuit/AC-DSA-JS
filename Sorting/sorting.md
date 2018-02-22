@@ -6,6 +6,8 @@
 * [Sorting Algorithms - Brilliant](https://brilliant.org/wiki/sorting-algorithms/)
 * [Sorting Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Sorting_algorithm)
 * [Visual Algo Sorting](https://visualgo.net/en/sorting)
+* [Algorithms For Beginners - Erica Millado](https://medium.com/yay-its-erica/algorithms-for-beginners-bubble-sort-insertion-sort-merge-sort-29bd5506cc48)
+* [Insertion Sort - Wikipedia](https://en.wikipedia.org/wiki/Insertion_sort)
 
 ### Lesson
 

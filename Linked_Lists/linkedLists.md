@@ -14,15 +14,22 @@ Let's think about what that means. One drawback of being contiguous is that your
 
 This is _expensive_, and is a problem that linked lists don't have. Because they are separate nodes in memory, each containing a reference to their partners, you can freely add and remove nodes cheaply. You just add references from that node's former partners to each other.
 
-Let's break that down. You have a 3-node list, and you remove item 2. Item 2 is connected to both 1 and 3. In order to remove item 2, you have to add a connection between 1 and 3. Or, visually:
+Let's break that down. You have a 3-node list, and you remove item 2. Item 2 is connected to both 1 and 3. In order to remove item 2, you have to:
 
-1=2=3
+1. Connect item 1 to item 3.
+2. Remove the connection between item 1 and item 3.
+
+Or, visually:
+
+1 => 2 => 3
 
 1 = ↓2↓ = 3
 
-1=3
+1 => 3
 
-However, there are drawbacks to linked lists. Access time by index is longer than for an array. While arrays' defined space in memory allows easy (_O(1)_) access to each element, linked lists don't have this luxury. In order to access a node at its index, linked lists have to start at the beginning and work their way to the correct node.
+A linked list is similar to an old-fashioned train, where the cars are not numbered in a consistent way. Each car of the train in a node (or _item_) in the linked list, the front car being the head of the list. To get to a car in the middle, you start at the front car and walk along the train.
+
+There are drawbacks to linked lists. Access time by index is longer than for an array. While arrays' defined space in memory allows easy (_O(1)_) access to each element, linked lists don't have this luxury. In order to access a node at its index, linked lists have to start at the beginning and work their way to the correct node.
 
 One last note: Singly-linked and doubly-linked lists are quite similar, with one exception. Whereas nodes in doubly-linked lists contain references to both of their adjacent nodes, nodes in singly-linked lists only contain references to their "next" node in line. Or, visually:
 

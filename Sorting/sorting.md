@@ -134,6 +134,8 @@ function bubbleSortBasic(array) {
 }
 ```
 
+> Ex. Extend bubble sort to take a `compareFunction` as argument and use the function when comparing elements.
+
 Follows is a more efficient implementation of bubble sort:
 
 ```js

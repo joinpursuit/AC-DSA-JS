@@ -122,15 +122,15 @@ Here is a basic implementation of bubble sort:
 
 ```js
 // This is a very basic implementation which is nice to understand the deep principle of bubble sort (going through all comparisons) but it can be greatly improved for performances
-function bubbleSortBasic(array) {
-  for (var i = 0; i < array.length; i++) {
-    for (var j = 0; j < array.length - 1; j++) {
-      if (array[j] > array[j + 1]) {
-        swap(array, j, j + 1);
+function bubbleSortBasic(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr.length - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        swap(arr, j, j + 1);
       }
     }
   }
-  return array;
+  return arr;
 }
 ```
 
@@ -140,17 +140,17 @@ Follows is a more efficient implementation of bubble sort:
 
 ```js
 // correct implementation: this is the usual implementation of the bubble sort algorithm. Some loops execution are avoided if not they are not needed
-function bubbleSort(array) {
+function bubbleSort(arr) {
   var swapped;
   do {
     swapped = false;
-    for (var i = 0; i < array.length; i++) {
-      if (array[i] && array[i + 1] && array[i] > array[i + 1]) {
-        swap(array, i, i + 1);
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] && arr[i + 1] && arr[i] > arr[i + 1]) {
+        swap(arr, i, i + 1);
         swapped = true;
       }
     }
   } while (swapped);
-  return array;
+  return arr;
 }
 ```

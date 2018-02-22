@@ -139,18 +139,45 @@ function bubbleSortBasic(arr) {
 Follows is a more efficient implementation of bubble sort:
 
 ```js
-// correct implementation: this is the usual implementation of the bubble sort algorithm. Some loops execution are avoided if not they are not needed
+// Better implementation: some loops are avoided if not they are not needed
 function bubbleSort(arr) {
-  var swapped;
-  do {
+  let swapped = true;
+  while (swapped) {
     swapped = false;
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i] && arr[i + 1] && arr[i] > arr[i + 1]) {
+    for (var i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
         swap(arr, i, i + 1);
         swapped = true;
       }
     }
-  } while (swapped);
-  return arr;
+  }
+}
+```
+
+### Insertion Sort
+
+Insertion sort is similar to the way we'd sort a hand of cards. We first sort the first 2 cards. We then place the 3rd card in the right position relative to the 2 sorted cards. We then add a 4th card to the right place within the sorted card.
+
+With insertion sort, we are creating a "sorted" subset of the array. Initially, the first card is sorted (an array with 1 element is sorted by default). Then we gradually add cards, putting each new card in the appropriate position (so that the subarray remains sorted). We continue doing this until the subset includes all the elements of the original array.
+
+Consider the following visualization of insertion sort:
+
+[insertion sort visualization](https://www.youtube.com/watch?v=8oJS1BMKE64)
+
+![vis ins](https://en.wikipedia.org/wiki/Insertion_sort#/media/File:Insertion-sort-example-300px.gif)
+
+The following is an implementation of insertion sort in javascript:
+
+```js
+function insertionSort(array) {
+  for (var i = 0; i < array.length; i++) {
+    let temp = array[i];
+    let j = i - 1;
+    while (j >= 0 && array[j] > temp) {
+      array[j + 1] = array[j];
+      j--;
+    }
+    array[j + 1] = temp;
+  }
 }
 ```

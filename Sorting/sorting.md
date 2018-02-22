@@ -117,3 +117,38 @@ This first attempt will partially sort the array, but not completely. We can ext
 [Bubble Sort Video](https://www.youtube.com/watch?v=yIQuKSwPlro)
 
 Buble sort looks at at each pair of numbers. If they are ordered correctly, we keep them in the same order. Otherwise, we swap them. Then, we keep going until the array is sorted.
+
+Here is a basic implementation of bubble sort:
+
+```js
+// This is a very basic implementation which is nice to understand the deep principle of bubble sort (going through all comparisons) but it can be greatly improved for performances
+function bubbleSortBasic(array) {
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 1; j < array.length; j++) {
+      if (array[j - 1] > array[j]) {
+        swap(array, j - 1, j);
+      }
+    }
+  }
+  return array;
+}
+```
+
+Follows is a more efficient implementation of bubble sort:
+
+```js
+// correct implementation: this is the usual implementation of the bubble sort algorithm. Some loops execution are avoided if not they are not needed
+function bubbleSort(array) {
+  var swapped;
+  do {
+    swapped = false;
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] && array[i + 1] && array[i] > array[i + 1]) {
+        swap(array, i, i + 1);
+        swapped = true;
+      }
+    }
+  } while (swapped);
+  return array;
+}
+```

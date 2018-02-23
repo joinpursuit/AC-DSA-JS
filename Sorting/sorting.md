@@ -183,3 +183,94 @@ function insertionSort(array) {
   }
 }
 ```
+
+### Merge Sort
+
+While we used a `swap` function for bubbleSort, mergeSort is the only one we'll be learning where the classic version of the algorithm includes two functions. Why is that, you might ask? Well, we are doing two discreet things when we use mergeSort:
+
+* We separate the array into individual units (length 1)
+* We *merge* these units together, comparing and sorting their elements.
+
+This is more efficient than our earlier sorting algorithms, because we aren't traversing the entire array multiple times. In fact, the time complexity of merge sort is **O(nlog(n))**. We won't be traversing the array once, exactly - we'll be traversing cut-up subsections of the array once, which adds up to more than one entire run-through. That's OK, though - we aren't wizards here, and there isn't currently a perfect O(n) sorting algorithm for arrays.
+
+This implementation is taken from [here](https://hackernoon.com/programming-with-js-merge-sort-deb677b777c0), with more granular explanation available, as well:
+
+```js
+// Split the array into halves and merge them recursively
+function mergeSort (arr) {
+  if (arr.length === 1) {
+    // return once we hit an array with a single item
+    return arr
+  }
+
+  const middle = Math.floor(arr.length / 2) // get the middle item of the array rounded down
+  const left = arr.slice(0, middle) // items on the left side
+  const right = arr.slice(middle) // items on the right side
+
+  return merge(
+    mergeSort(left),
+    mergeSort(right)
+  )
+}
+
+// compare the arrays item by item and return the concatenated result
+function merge (left, right) {
+  let result = []
+  let indexLeft = 0
+  let indexRight = 0
+
+  while (indexLeft < left.length && indexRight < right.length) {
+    if (left[indexLeft] < right[indexRight]) {
+      result.push(left[indexLeft])
+      indexLeft++
+    } else {
+      result.push(right[indexRight])
+      indexRight++
+    }
+  }
+
+  return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight))
+}
+
+const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3]
+console.log(mergeSort(list)) // [ 1, 2, 2, 3, 3, 3, 5, 6, 7, 8 ]
+```
+
+### Quicksort
+
+QuickSort is a slick way of sorting an array with the same time complexity as mergeSort. QuickSort accomplishes its goal using recursion - it identifies a *pivot*, frequently the first element of the array. It then sorts the array into left (less than) and right (greater than) sub-arrays, and calls itself on those sub-arrays. It continues doing this until it reaches arrays of length 1.
+
+This is similar, in many ways, to mergeSort, but its implementation is much more concise, and frankly, pretty cool. Take a look:
+
+```js
+function quick_Sort(origArray) {
+	if (origArray.length <= 1) {
+		return origArray;
+	} else {
+
+		var left = [];
+		var right = [];
+		var newArray = [];
+		var pivot = origArray.pop();
+		var length = origArray.length;
+
+		for (var i = 0; i < length; i++) {
+			if (origArray[i] <= pivot) {
+				left.push(origArray[i]);
+			} else {
+				right.push(origArray[i]);
+			}
+		}
+
+		return newArray.concat(quick_Sort(left), pivot, quick_Sort(right));
+	}
+}
+
+var myArray = [3, 0, 2, 5, -1, 4, 1 ];
+
+console.log("Original array: " + myArray);
+var sortedArray = quick_Sort(myArray);
+console.log("Sorted array: " + sortedArray);
+```
+
+([Source](https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-1.php))

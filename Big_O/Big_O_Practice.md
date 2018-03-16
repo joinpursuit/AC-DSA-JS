@@ -8,19 +8,19 @@ you have not yet made a pull request, make a pull
 request against AC-DSA.
 
 ```javascript
-func problemOne(arr) {
+function problemOne(arr) {
     for (var i=0; i<1000; i++) {
-        print(i)
+        console.log(i)
     }
 }
 ```
 
 
 ```javascript
-func problemTwo(arr) {
+function problemTwo(arr) {
     for (var i=0; i<arr.length; i++) {
         for (var j=0; j<arr.length; j++) {
-            print(i + ' ' + j)
+            console.log(i + ' ' + j)
         }
     }
 }
@@ -28,7 +28,7 @@ func problemTwo(arr) {
 
 
 ```javascript
-func problemThree() {
+function problemThree() {
     for (var i=0; i<1000; i++) {
         problemOne()
     }
@@ -37,7 +37,7 @@ func problemThree() {
 
 
 ```javascript
-func problemFour(arr) {
+function problemFour(arr) {
     for (var i=0; i<arr.length; i++) {
         problemTwo(arr)
     }
@@ -46,7 +46,7 @@ func problemFour(arr) {
 
 
 ```javascript
-func problemFive(arr) {
+function problemFive(arr) {
     for (var i=0; i<arr.length; i++) {
         problemTwo(arr)
     }
